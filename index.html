@@ -116,10 +116,9 @@
               </div>
               <div class="clearfix">
               </div>
-              <a class="more" data-toggle="collapse" href="#more-panel">more</a>
+              <a class="more">more</a>
 
-
-              <div id="more-panel" class="collapse">
+              <div class="info-panel">
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
@@ -164,7 +163,7 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <a class="less" data-toggle="collapse" href="#more-panel">less</a>
+                <a class="less">less</a>
               </div>
             </div>
           </div>
@@ -204,10 +203,9 @@
               </div>
               <div class="clearfix">
               </div>
-              <a class="more" data-toggle="collapse" href="#more-panel">more</a>
+              <a class="more">more</a>
 
-
-              <div id="more-panel" class="collapse">
+              <div class="info-panel">
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
@@ -252,7 +250,7 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <a class="less" data-toggle="collapse" href="#more-panel">less</a>
+                <a class="less">less</a>
               </div>
             </div>
           </div>
@@ -292,10 +290,9 @@
               </div>
               <div class="clearfix">
               </div>
-              <a class="more" data-toggle="collapse" href="#more-panel">more</a>
+              <a class="more">more</a>
 
-
-              <div id="more-panel" class="collapse">
+              <div class="info-panel">
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
@@ -340,7 +337,7 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <a class="less" data-toggle="collapse" href="#more-panel">less</a>
+                <a class="less">less</a>
               </div>
             </div>
           </div>
@@ -349,7 +346,7 @@
         </div>
         <div class="row next-panels">
           <!-- Panel 1 -->
-          <div class="col-md-4 program-panel" style="height: 100px;">
+          <div class="col-md-4 program-panel">
             <div class="inner-panel">
               <div class="program-name">
                 <h4>Yoga Classes</h4>
@@ -383,10 +380,9 @@
               </div>
               <div class="clearfix">
               </div>
-              <a class="more" data-toggle="collapse" href="#more-panel">more</a>
+              <a class="more">more</a>
 
-
-              <div id="more-panel" class="collapse">
+              <div class="info-panel">
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
@@ -431,11 +427,10 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <a class="less" data-toggle="collapse" href="#more-panel">less</a>
+                <a class="less">less</a>
               </div>
             </div>
-          </div>
-        </div>
+          </div>  
         </div>
       </div>
     </div>
@@ -485,9 +480,8 @@
       var displayBlock = function() {
         // $(this).parent().parent().find('.more').css('display', 'block');
         $(this).parent().siblings('.more').css('display', 'block');
-        $(this).siblings('.info-panel').slideUp(1000);
+        $(this).parent('.info-panel').slideUp(1000);
       }
-
       $('.more').on('click', displayNone);
       $('.less').on('click', displayBlock);
 

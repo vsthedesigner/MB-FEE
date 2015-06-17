@@ -235,3 +235,7 @@ body {
 .spark-line {
     background: url(../assets/spark_line.png) no-repeat center center;
 }
+
+.info-panel {
+    display: none;
+}
