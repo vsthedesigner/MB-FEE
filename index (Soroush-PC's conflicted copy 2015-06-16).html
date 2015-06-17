@@ -476,16 +476,11 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script>
       var displayNone = function() {
-        // this = document.querySelector('....')
-        console.log(this)
         $(this).css('display', 'none');
-        $(this).siblings('.info-panel').slideDown(1000);
       }
 
       var displayBlock = function() {
-        // $(this).parent().parent().find('.more').css('display', 'block');
-        $(this).parent().siblings('.more').css('display', 'block');
-        $(this).siblings('.info-panel').slideUp(1000);
+       $(this).parent().parent().find('.more').css('display', 'block'); 
       }
 
       $('.more').on('click', displayNone);
