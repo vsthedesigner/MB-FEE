@@ -1,6 +1,10 @@
 body {
     background: #ecebe2;
 }
+.nav-container {
+    width: 100%;
+    padding: 0;
+}
 
 .navbar {
     border: none;
@@ -11,16 +15,53 @@ body {
     box-shadow: none;
 }
 
-.nav-container {
-    width: 100%;
-    padding: 0;
+.navbar-right {
+    margin: 0;
 }
 
+/* Set active elemnt in main nav */
+#navbar > ul > li.active {
+    background: #fff;
+    border: 1px solid #bcc5c8;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: none;
+    box-shadow: 0px 1px 8px #ccc, 0px 4px 7px #777;
+    z-index: 10;
+}
+
+#navbar > ul > li.active > a {
+    color: #646e75;
+    border:none;
+}
+
+/* Set inactive/non-active/normal state of nav items */
+#navbar > ul > li {
+    background: #f2f5f4;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: none;
+}
+
+#navbar > ul > li.tab-pane {
+    border: none;
+    background: none;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs > li > a{
+    color: #81a190;
+    border: none;
+}
+
+/* Set up wrapper, logo and text for company brand */
 .navbar-brand {
     margin:0 !important;
 }
 
-.navbar-brand > img{
+.navbar-brand > img {
     margin-top:-4px;
     display: inline-block;
 }
@@ -31,14 +72,7 @@ body {
     color: #829589
 }
 
-.navbar-right {
-    margin: 0;
-}
-
-.nav-tabs {
-
-    border: none;
-}
+/* Set up secondary nav */
 
 .secondary-nav {
     position: relative;
@@ -47,6 +81,10 @@ body {
     background: #fff;
     z-index: 20;
     padding: 0 15px 0 15px;
+}
+
+.secondary-nav > div > ul {
+    float:left !important;
 }
 
 .secondary-nav >  #navbar > ul > li {
@@ -65,48 +103,12 @@ body {
     margin: 0;
 }
 
-#navbar > ul > li.active {
-    background: #fff;
-    border: 1px solid #bcc5c8;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: none;
-    box-shadow: 0px 1px 8px #ccc, 0px 4px 7px #777;
-    z-index: 10;
-}
-
-#navbar > ul > li.active > a {
-    color: #646e75;
-    border:none;
-}
-#navbar > ul > li {
-    background: #f2f5f4;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px 5px 0px 0px;
-    border-bottom: none;
-}
-
-#navbar > ul > li.tab-pane {
-    border: none;
-    background: none;
-}
-
-.nav-tabs > li > a{
-    color: #81a190;
-    border: none;
-}
-
-.secondary-nav > div > ul {
-    float:left !important;
-}
-
+/* Wrapper for content */
 .content-container {
     margin: 0;
 }
 
-.next-panels {
-    margin-top: 20px;
-}
-
+/* Add New Program Button */
 .addnewprogram-btn {
     background-color: #bcd89e; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -125,7 +127,6 @@ body {
     width: 100%;
     border-radius: 5px;
     box-shadow:  1px 1px 3px #6d6d6d, -1px -1px 3px #6d6d6d;
-
 }
 
 .addnewprogram-btn:hover {
@@ -148,17 +149,34 @@ body {
   font-weight: bold;
 }
 
+/* Padded inner panel for each program */
 .inner-panel {
     padding: 5px 15px;
     background: #fff;
     border-radius: 5px;
     border: 1px solid #e6e6dd;
+    margin-bottom: 20px;
 }
 
+/* Program Name */
 .program-name {
     float: left;
 }
 
+/* Bar graph */
+
+.bar-graph-title {
+    color: #b9b9b0;
+    font-size: .7em;
+}
+
+.bar-graph {
+    width: 100%;
+    height: 92px;
+    background: url(../assets/graph.png) no-repeat center center;
+}
+
+/* Pencil icon with hover */
 .pencil-icon {
     background: url(../assets/pencil_icons.png) no-repeat 0 -17px;
     width: 18px;
@@ -172,6 +190,7 @@ body {
     cursor: pointer;
 }
 
+/* Panel section title and info styles: Sets up lists and columns for data*/
 .panel-section-title, .panel-section-info {
     font-size: 0.725em;
     color: #c4c4bd;
@@ -202,7 +221,6 @@ body {
     color: #c9c2bc;
 }
 
-
 .panel-section-title.column2 {
     margin-left: 10%;
     width: 24%;
@@ -214,28 +232,75 @@ body {
     margin: 0 0 0 10%;
 }
 
-.less, .more {
+.panel-section-title.column3 {
+    width: 13%;
+    margin-left: 6%;
+}
+
+/* "More" and "Less" Buttons */
+.less, .more, .more-inactive {
     font-size: .8em;
     color: #cecec6;
     text-decoration: none;
 }
 
-.less:hover, .more:hover {
+.less:hover, .more:hover, .more-inactive:hover {
     color: #6f6f67;
     cursor: pointer;
     text-decoration: none;
 }
 
-.bar-graph {
-    width: 100%;
-    height: 92px;
-    background: url(../assets/graph.png) no-repeat center center;
-}
-
-.spark-line {
-    background: url(../assets/spark_line.png) no-repeat center center;
-}
-
+/* Expandable Panel */
 .info-panel {
     display: none;
+}
+
+/* Re-Style Bootstrap primary button to match color scheme. Used for lightbox form submission */
+.btn-primary {
+    color: #666;
+    background: rgb(187,215,158); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JiZDc5ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5Y2MxODUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(187,215,158,1) 0%, rgba(156,193,133,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(187,215,158,1)), color-stop(100%,rgba(156,193,133,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(187,215,158,1) 0%,rgba(156,193,133,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(187,215,158,1) 0%,rgba(156,193,133,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(187,215,158,1) 0%,rgba(156,193,133,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(187,215,158,1) 0%,rgba(156,193,133,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbd79e', endColorstr='#9cc185',GradientType=0 ); /* IE6-8 */
+    border-color: #688a53;
+    }
+
+.btn-primary.active, .btn-primary:hover {
+    color: #000;
+}
+
+.btn-primary.active, .btn-primary:active  {
+    background: #688a53;
+    color: #fff;
+}
+
+/* Lower list styles */
+.all-programs {
+    color: #959580;
+    font-size: 12px;
+}
+
+.all-programs ~ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.monthly-sales, .monthly-attendance {
+    color: #959580;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.lower-listings > div > div > div {
+    color: #69695f;
+    font-size: 12px;
+    font-weight: bold;
+
 }

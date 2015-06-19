@@ -37,13 +37,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <!-- Logo -->
           <a class="navbar-brand" href="#">
             <img alt="Brand" src="assets/urbanyoga-logo.png" height="47" width="72">
             <span>Urban Yoga</span>
-            
           </a>
 
         </div>
+        <!-- Primary Navigation -->
         <div class="row nav-row">
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav nav-tabs navbar-right" style="margin-top: 28px;  ">
@@ -57,6 +58,7 @@
             </ul>
           </div>
         </div>
+        <!-- Secondary Navigation -->
         <div class="row nav-row secondary-nav">
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav nav-tabs navbar-right">
@@ -69,65 +71,77 @@
         </div>
       </div>
     </nav>
+    <!-- Content Container -->
     <div class="container content-container">
-      <!-- 3 columns -->
+      <!-- Add New Program Button -->
       <div class="col-md-1">
         <button type="button" class="addnewprogram-btn" data-toggle="modal" data-target="#addNewProgramModal">
-        <!-- <div class="addnewprogram-btn data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo> -->
         <div class="addnewprogram-text">New Program
         </div>
         </button>
       </div>
+      <!-- Panel Container -->
       <div class="col-md-11">
         <div class="container">
         <div class="row">
           <!-- Panel 1 -->
-          <div class="col-md-4 program-panel">
+          <div class="col-md-4 program-panel1 last-panel">
             <div class="inner-panel">
+              <!-- Program Name Loaded via API -->
               <div class="program-name">
-                <h4>Yoga Classes</h4>
+                <h4></h4>
               </div>
+              <!-- Pencil Icon -->
               <div class="pencil-icon">
               </div>
               <div class="clearfix">
               </div>
+              <!-- Bar Graph -->
               <div class="bar-graph-title">
                 Sales by month
               </div>
               <div class="bar-graph">
               </div>
+              <!-- Column Titles -->
               <div class="monthly-sales-title panel-section-title column1">
                 Total Monthly
               </div>
               <div class="panel-section-title column2">
                 Current
               </div>
-              <div class=" panel-section-title column3" style="margin-left: 6%; width: 13%;">
+              <div class="panel-section-title column3">
                 1-year
               </div>
               <div class="panel-section-title column1">
                 Sales
               </div>
+              <!-- Monthly Sales Amount loaded via API call -->
+              <!-- Monthy Sales Amount loaded via panel -->
               <div class="panel-section-info column2">
-                $23,483
+                $<span></span>
               </div>
+              <!-- Spark Line -->
               <div class="panel-section-info column3">
                 <img src="assets/spark_line.png" height="22" width="63">
               </div>
               <div class="clearfix">
               </div>
+              <!-- More button -->
               <a class="more">more</a>
 
+              <!-- Expandable Panel -->
               <div class="info-panel">
+              <!-- Panel Columns -->
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
                 <div class="panel-section-title column2">
                   Current
                 </div>
-                <div class="panel-section-title column3" style="margin-left: 6%; width: 13%;">
+                <div class="panel-section-title column3">
                   1-year
                 </div>
+                <!-- Panel Data -->
                 <div class="panel-section-info column1">
                   <ul>
                     <li>Monthly Unlimited</li>
@@ -137,7 +151,7 @@
                     <li>Student Single Visit</li>
                     <li>20 class pass</li>
                     <li>5 class pass</li>
-                  </ul> 
+                  </ul>
                 </div>
                 <div class="panel-section-info column2">
                   <ul>
@@ -150,53 +164,115 @@
                     <li>$520</li>
                   </ul>
                 </div>
+                <!-- Panel Spark Lines -->
                 <div class="panel-section-info column3">
                   <ul>
-                    <li><img src="assets/spark_line01.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line02.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line03.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line04.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line05.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line06.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line07.jpg" height="22" width="63"></li>
+                    <li><img src="assets/spark_line01.jpg" /></li>
+                    <li><img src="assets/spark_line02.jpg" /></li>
+                    <li><img src="assets/spark_line03.jpg" /></li>
+                    <li><img src="assets/spark_line04.jpg" /></li>
+                    <li><img src="assets/spark_line05.jpg" /></li>
+                    <li><img src="assets/spark_line06.jpg" /></li>
+                    <li><img src="assets/spark_line07.jpg" /></li>
                   </ul>
                 </div>
                 <div class="clearfix">
                 </div>
+                <!-- Less Button -->
                 <a class="less">less</a>
               </div>
             </div>
-          </div>
+            <!-- Lower Listings -->
+            <div class="row">
+              <div class="col-md-4 col-xs-4">
+                <!-- Lower Listing Column Headings -->
+                <div class="all-programs">
+                  All Programs
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="monthly-sales">
+                  Monthly Sales
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <div class="monthly-attendance">
+                  Monthly Attendance
+                </div>
+              </div>
+            </div>
+            <!-- Lower Listings Data loaded via API call -->
+            <div class="lower-listings">
+              <div class="row">
+                <div class="col-md-4 col-xs-4">
+                  <div class="lower-program-name1">
+                  </div>
+                  <a class="more-inactive">more</a>
+                </div>
 
+                <div class="col-md-4 col-xs-4">
+                  <div class="lower-monthly-sales1">
+                  $<span></span>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-xs-4">
+                  <div class="monthly-attendance1">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-xs-4">
+                  <div class="lower-program-name2">
+                  </div>
+                  <a class="more-inactive">more</a>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                  <div class="lower-monthly-sales2">
+                  $<span></span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                  <div class="monthly-attendance2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Panel 2 -->
-          <div class="col-md-4 program-panel">
+          <div class="col-md-4 program-panel2">
             <div class="inner-panel">
+              <!-- Program Name Loaded via API call -->
               <div class="program-name">
-                <h4>Yoga Classes</h4>
+                <h4></h4>
               </div>
+              <!-- Pencil Icon -->
               <div class="pencil-icon">
               </div>
               <div class="clearfix">
               </div>
+              <!-- Bar Graph -->
               <div class="bar-graph-title">
                 Sales by month
               </div>
               <div class="bar-graph">
               </div>
+              <!-- Column Titles -->
               <div class="monthly-sales-title panel-section-title column1">
                 Total Monthly
               </div>
               <div class="panel-section-title column2">
                 Current
               </div>
-              <div class=" panel-section-title column3" style="margin-left: 6%; width: 13%;">
+              <div class="panel-section-title column3">
                 1-year
               </div>
               <div class="panel-section-title column1">
                 Sales
               </div>
+              <!-- Monthly Sales Amount loaded via API call -->
               <div class="panel-section-info column2">
-                $23,483
+                $<span></span>
               </div>
               <div class="panel-section-info column3">
                 <img src="assets/spark_line.png" height="22" width="63">
@@ -205,16 +281,19 @@
               </div>
               <a class="more">more</a>
 
+              <!-- Expandable Panel -->
               <div class="info-panel">
+              <!-- Panel Columns -->
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
                 <div class="panel-section-title column2">
                   Current
                 </div>
-                <div class="panel-section-title column3" style="margin-left: 6%; width: 13%;">
+                <div class="panel-section-title column3">
                   1-year
                 </div>
+                <!-- Panel Data -->
                 <div class="panel-section-info column1">
                   <ul>
                     <li>Monthly Unlimited</li>
@@ -224,7 +303,7 @@
                     <li>Student Single Visit</li>
                     <li>20 class pass</li>
                     <li>5 class pass</li>
-                  </ul> 
+                  </ul>
                 </div>
                 <div class="panel-section-info column2">
                   <ul>
@@ -237,71 +316,82 @@
                     <li>$520</li>
                   </ul>
                 </div>
+                <!-- Panel Spark Lines -->
                 <div class="panel-section-info column3">
                   <ul>
-                    <li><img src="assets/spark_line01.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line02.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line03.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line04.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line05.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line06.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line07.jpg" height="22" width="63"></li>
+                    <li><img src="assets/spark_line01.jpg" /></li>
+                    <li><img src="assets/spark_line02.jpg" /></li>
+                    <li><img src="assets/spark_line03.jpg" /></li>
+                    <li><img src="assets/spark_line04.jpg" /></li>
+                    <li><img src="assets/spark_line05.jpg" /></li>
+                    <li><img src="assets/spark_line06.jpg" /></li>
+                    <li><img src="assets/spark_line07.jpg" /></li>
                   </ul>
                 </div>
                 <div class="clearfix">
                 </div>
+                <!-- Less Button -->
                 <a class="less">less</a>
               </div>
             </div>
           </div>
-          
           <!-- Panel 3 -->
-          <div class="col-md-4 program-panel">
+          <div class="col-md-4 program-panel3 ">
             <div class="inner-panel">
+              <!-- Program Name Loaded via API call -->
               <div class="program-name">
-                <h4>Yoga Classes</h4>
+                <h4></h4>
               </div>
+              <!-- Pencil Icon -->
               <div class="pencil-icon">
               </div>
               <div class="clearfix">
               </div>
+              <!-- Bar Graph -->
               <div class="bar-graph-title">
                 Sales by month
               </div>
               <div class="bar-graph">
               </div>
+              <!-- Column Titles -->
               <div class="monthly-sales-title panel-section-title column1">
                 Total Monthly
               </div>
               <div class="panel-section-title column2">
                 Current
               </div>
-              <div class=" panel-section-title column3" style="margin-left: 6%; width: 13%;">
+              <div class="panel-section-title column3">
                 1-year
               </div>
               <div class="panel-section-title column1">
                 Sales
               </div>
+              <!-- Monthly Sales Amount loaded via API call -->
               <div class="panel-section-info column2">
-                $23,483
+                $<span></span>
               </div>
+              <!-- Spark Line -->
               <div class="panel-section-info column3">
-                <img src="assets/spark_line.png" height="22" width="63">
+                <img src="assets/spark_line.png" />
               </div>
               <div class="clearfix">
               </div>
+              <!-- More button -->
               <a class="more">more</a>
 
+              <!-- Expandable Panel -->
               <div class="info-panel">
+              <!-- Panel Columns -->
                 <div class="panel-section-title column1">
                   Price Name
                 </div>
                 <div class="panel-section-title column2">
                   Current
                 </div>
-                <div class="panel-section-title column3" style="margin-left: 6%; width: 13%;">
+                <div class="panel-section-title column3">
                   1-year
                 </div>
+                <!-- Panel Data -->
                 <div class="panel-section-info column1">
                   <ul>
                     <li>Monthly Unlimited</li>
@@ -311,7 +401,7 @@
                     <li>Student Single Visit</li>
                     <li>20 class pass</li>
                     <li>5 class pass</li>
-                  </ul> 
+                  </ul>
                 </div>
                 <div class="panel-section-info column2">
                   <ul>
@@ -324,117 +414,32 @@
                     <li>$520</li>
                   </ul>
                 </div>
+                <!-- Panel Spark Lines -->
                 <div class="panel-section-info column3">
                   <ul>
-                    <li><img src="assets/spark_line01.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line02.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line03.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line04.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line05.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line06.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line07.jpg" height="22" width="63"></li>
+                    <li><img src="assets/spark_line01.jpg" /></li>
+                    <li><img src="assets/spark_line02.jpg" /></li>
+                    <li><img src="assets/spark_line03.jpg" /></li>
+                    <li><img src="assets/spark_line04.jpg" /></li>
+                    <li><img src="assets/spark_line05.jpg" /></li>
+                    <li><img src="assets/spark_line06.jpg" /></li>
+                    <li><img src="assets/spark_line07.jpg" /></li>
                   </ul>
                 </div>
                 <div class="clearfix">
                 </div>
+                <!-- Less Button -->
                 <a class="less">less</a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="clearfix">
-        </div>
-        <div class="row next-panels">
-          <!-- Panel 1 -->
-          <div class="col-md-4 program-panel">
-            <div class="inner-panel">
-              <div class="program-name">
-                <h4>Yoga Classes</h4>
-              </div>
-              <div class="pencil-icon">
-              </div>
-              <div class="clearfix">
-              </div>
-              <div class="bar-graph-title">
-                Sales by month
-              </div>
-              <div class="bar-graph">
-              </div>
-              <div class="monthly-sales-title panel-section-title column1">
-                Total Monthly
-              </div>
-              <div class="panel-section-title column2">
-                Current
-              </div>
-              <div class=" panel-section-title column3" style="margin-left: 6%; width: 13%;">
-                1-year
-              </div>
-              <div class="panel-section-title column1">
-                Sales
-              </div>
-              <div class="panel-section-info column2">
-                $23,483
-              </div>
-              <div class="panel-section-info column3">
-                <img src="assets/spark_line.png" height="22" width="63">
-              </div>
-              <div class="clearfix">
-              </div>
-              <a class="more">more</a>
-
-              <div class="info-panel">
-                <div class="panel-section-title column1">
-                  Price Name
-                </div>
-                <div class="panel-section-title column2">
-                  Current
-                </div>
-                <div class="panel-section-title column3" style="margin-left: 6%; width: 13%;">
-                  1-year
-                </div>
-                <div class="panel-section-info column1">
-                  <ul>
-                    <li>Monthly Unlimited</li>
-                    <li>Student 1 Month</li>
-                    <li>Single Visit</li>
-                    <li>10 class pass</li>
-                    <li>Student Single Visit</li>
-                    <li>20 class pass</li>
-                    <li>5 class pass</li>
-                  </ul> 
-                </div>
-                <div class="panel-section-info column2">
-                  <ul>
-                    <li>$4,260</li>
-                    <li>$1,750</li>
-                    <li>$560</li>
-                    <li>$475</li>
-                    <li>$445</li>
-                    <li>$230</li>
-                    <li>$520</li>
-                  </ul>
-                </div>
-                <div class="panel-section-info column3">
-                  <ul>
-                    <li><img src="assets/spark_line01.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line02.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line03.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line04.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line05.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line06.jpg" height="22" width="63"></li>
-                    <li><img src="assets/spark_line07.jpg" height="22" width="63"></li>
-                  </ul>
-                </div>
-                <div class="clearfix">
-                </div>
-                <a class="less">less</a>
-              </div>
-            </div>
-          </div>  
+          <!-- Clear floats -->
+          <div class="clearfix">
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- Lightbox form for "Add New Program" -->
     <div class="modal fade" id="addNewProgramModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -444,23 +449,56 @@
           </div>
           <div class="modal-body">
             <form>
+            <!-- Fields specified to be include per spec -->
               <div class="form-group">
-                <label for="recipient-name" class="control-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+                <select class="form-control">
+                  <option>--Select Program Type--</option>
+                  <option>Count Series</option>
+                  <option>Time Series</option>
+                  <option>Membership</option>
+                </select>
               </div>
               <div class="form-group">
-                <label for="message-text" class="control-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+                <input type="text" class="form-control" id="ProgramName" placeholder="Program Name">
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="">
+                      Allow Online Scheduling
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="number" min="1" max="30" maxlength="2" class="form-control" id="DefaultCapacity" placeholder="Default Capacity">
+              </div>
+              <div class="form-group">
+                <label for="tabsThisProgramIsOn" style="font-weight: normal;">Tabs This Program Is On:</label><br />
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="classesChecked" value="classes"> Classes
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="appointmentChecked" value="appointments"> Appointments
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="workshopsChecked" value="workshops">Workshops
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="insideChecked" value="inside"> Inside
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="gymChecked" value="gym">Gym
+                </label>
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button id="addNewProgramSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Add New Program</button>
           </div>
         </div>
       </div>
     </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -469,23 +507,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script>
-      var displayNone = function() {
-        // this = document.querySelector('....')
-        console.log(this)
-        $(this).css('display', 'none');
-        $(this).siblings('.info-panel').slideDown(1000);
-      }
-
-      var displayBlock = function() {
-        // $(this).parent().parent().find('.more').css('display', 'block');
-        $(this).parent().siblings('.more').css('display', 'block');
-        $(this).parent('.info-panel').slideUp(1000);
-      }
-      $('.more').on('click', displayNone);
-      $('.less').on('click', displayBlock);
-
-
+    <script src="js/moreless.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script src="js/api.js" type="text/javascript" charset="utf-8">
     </script>
   </body>
 </html>
