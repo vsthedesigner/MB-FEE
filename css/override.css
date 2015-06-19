@@ -1,6 +1,15 @@
 body {
     background: #ecebe2;
 }
+
+.large-text {
+    font-size: 0.85em;
+}
+
+.small-text {
+    font-size: 0.7em;
+}
+
 .nav-container {
     width: 100%;
     padding: 0;
@@ -145,7 +154,6 @@ body {
   position: absolute;
   top: 105%;
   left: 14%;
-  font-size: .8em;
   font-weight: bold;
 }
 
@@ -167,7 +175,6 @@ body {
 
 .bar-graph-title {
     color: #b9b9b0;
-    font-size: .7em;
 }
 
 .bar-graph {
@@ -192,7 +199,6 @@ body {
 
 /* Panel section title and info styles: Sets up lists and columns for data*/
 .panel-section-title, .panel-section-info {
-    font-size: 0.725em;
     color: #c4c4bd;
     float: left;
     width: 33%;
@@ -239,7 +245,6 @@ body {
 
 /* "More" and "Less" Buttons */
 .less, .more, .more-inactive {
-    font-size: .8em;
     color: #cecec6;
     text-decoration: none;
 }
@@ -283,7 +288,6 @@ body {
 /* Lower list styles */
 .all-programs {
     color: #959580;
-    font-size: 12px;
 }
 
 .all-programs ~ ul {
@@ -294,13 +298,11 @@ body {
 
 .monthly-sales, .monthly-attendance {
     color: #959580;
-    font-size: 10px;
     white-space: nowrap;
 }
 
 .lower-listings > div > div > div {
     color: #69695f;
-    font-size: 12px;
     font-weight: bold;
 
 }
